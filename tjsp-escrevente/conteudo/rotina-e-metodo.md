@@ -1,22 +1,20 @@
 # Rotina e método
 
-## A semana (4h30 líquidas por dia útil)
+## A semana (4h30 líquidas por dia útil, no turno da tarde)
 
-Ponto de partida: maior nota nas provas anteriores = 60%. Fracos: **Português, Matemática e Direito**.
+Base: [edital 2026](edital-2026.md) — 70 questões. Último resultado: 29/70 (Português 7/16, Direito 13/32, Gerais 9/22).
 
-| Dia | Bloco 1 (mais fresco) | Bloco 2 | Bloco 3 | Fixos |
+| Dia | Bloco 1 | Bloco 2 | Bloco 3 | Fixos |
 |---|---|---|---|---|
-| Segunda | Português — teoria | Matemática — teoria + exercícios | Proc. Penal | Lei seca 30 · Revisão 1h |
-| Terça | Português — questões | Matemática — questões | Proc. Civil | Lei seca 30 · Revisão 1h |
-| Quarta | Português — teoria | Normas TJSP | Dir. Constitucional | Lei seca 30 · Revisão 1h |
-| Quinta | Matemática — teoria + exercícios | Português — questões | Direito Penal | Lei seca 30 · Revisão 1h |
-| Sexta | Português — questões dos seus erros | Raciocínio/Mat. 30 · Informática 30 · Atualidades 30 | Direito misto — questões 1h | Lei seca 30 · Revisão da semana 30 |
-| Sábado | **Simulado completo** no tempo da Vunesp + correção | | | |
+| Segunda | Português — teoria | Matemática — teoria + exercícios | Dir. Administrativo (Estatuto Lei 10.261) | Lei seca 30 · Revisão 1h |
+| Terça | Português — questões | Raciocínio Lógico | Proc. Civil | Lei seca 30 · Revisão 1h |
+| Quarta | Informática | Dir. Constitucional | Legislação Especial (NSCGJ, Res. 850 e 963) | Lei seca 30 · Revisão 1h |
+| Quinta | Português — teoria (concordância, regência, crase) | Matemática — questões | Proc. Penal | Lei seca 30 · Revisão 1h |
+| Sexta | Português — questões dos seus erros | Penal 30 · Est. Pessoa c/ Deficiência 30 · Improbidade 30 · Atualidades 30 | | Lei seca 30 · Revisão da semana 1h |
+| Sábado | **Simulado de 70 questões** no tempo da Vunesp + correção | | | |
 | Domingo | **Descanso** (opcional: 15 min de flashcards) | | | |
 
-Português 5x por semana e Matemática 3x: são as matérias em que mais pontos podem ser ganhos por esforço. Meta: cerca de 40 questões por dia.
-
-**Antes de tudo:** confirme no edital 2025 (PDF) quantas questões vale cada matéria e se há redação. Se não houver, a rotina já está sem bloco de redação. Ajuste os pesos em `data/rotina.js`.
+Meta: cerca de 40 questões por dia. Sem bloco de redação: a prova é objetiva.
 
 Para mudar a rotina, edite `data/rotina.js` — o app atualiza sozinho.
 
