@@ -167,7 +167,7 @@ window.CARDS = (window.CARDS || []).concat([
   { id: "normas-55", lei: "Normas TJSP", ref: "NSCGJ, Tomo I, art. 84, §1º",
     frente: "Quando o escrivão certifica a autenticidade da firma do juiz?",
     verso: "Na expedição de alvarás de soltura, mandados ou contramandados de prisão, requisições de preso e atos para os quais a lei exige certificação; e quando houver dúvida sobre a autenticidade da firma. Dispensada onde o sistema permitir assinatura por certificação digital." },
-  { id: "normas-56", lei: "Normas TJSP", ref: "NSCGJ, Tomo I, art. 85",
+  { id: "normas-56", lei: "Normas TJSP", ref: "NSCGJ, Tomo I, art. 85 · caiu 2025 Q46",
     frente: "Quem assina mandados, cartas postais e ofícios? Quando a subscrição do juiz é obrigatória?",
     verso: "Os escrivães assinam, declarando que o fazem por ordem do juiz (salvo determinação em contrário). Subscrição do juiz obrigatória: quando a lei ou as Normas exigirem (busca e apreensão cautelar, prisão, contramandado, alvará de soltura, alvarás em geral, levantamento de depósito, ordem de arrombamento); desconto de pensão alimentícia; documentos dirigidos a autoridades." },
   { id: "normas-57", lei: "Normas TJSP", ref: "NSCGJ, Tomo I, art. 87",

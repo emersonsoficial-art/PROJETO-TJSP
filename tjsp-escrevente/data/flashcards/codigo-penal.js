@@ -25,7 +25,7 @@ window.CARDS = (window.CARDS || []).concat([
   { id: "cp-8", lei: "Código Penal", ref: "CP art. 296, §1º · caiu 2024 Q25",
     frente: "Art. 296, §1º: quem incorre nas mesmas penas? Qual o objeto de cada modalidade?",
     verso: "I quem FAZ USO do selo ou sinal FALSIFICADO; II quem UTILIZA INDEVIDAMENTE o selo ou sinal VERDADEIRO, em prejuízo de outrem ou em proveito próprio ou alheio; III quem altera, falsifica ou faz uso indevido de marcas, logotipos, siglas ou outros símbolos identificadores de órgãos ou entidades da Administração Pública. Pegadinha: 'todas as modalidades exigem fim de prejudicar terceiros' ou 'são crimes próprios de funcionário' (ambas erradas). O §2º repete o aumento de 1/6 do funcionário que se prevalece do cargo." },
-  { id: "cp-9", lei: "Código Penal", ref: "CP art. 297, caput",
+  { id: "cp-9", lei: "Código Penal", ref: "CP art. 297, caput · caiu 2024 Q26",
     frente: "Falsificação de documento PÚBLICO (art. 297): conduta e pena.",
     verso: "Falsificar, no todo ou em parte, documento público, ou alterar documento público verdadeiro. Pena: reclusão de 2 a 6 anos e multa. Aumento de 1/6 se o agente é funcionário público e se prevalece do cargo (§1º). Ex. da prova: alterar o número do chassi no documento do veículo (CRV) = falsidade de documento público (caiu 2024 Q26)." },
   { id: "cp-10", lei: "Código Penal", ref: "CP art. 297, §2º",

@@ -27,4 +27,4 @@ Base: questões das Normas da Corregedoria (arts. 5 a 18, 27 a 99 e 103 a 131). 
 6. Certidões (art. 104): 5 dias, 5 dias úteis entre ofícios, segredo de justiça.
 
 ## Cartões que usam este método
-No app, aba **Lei seca**, filtro **Pegadinhas Vunesp (NSCGJ)**: 50 cartões "certo ou errado" feitos a partir das alternativas erradas das provas. Responda como se estivesse na prova e confira o verso: ele diz o certo e qual foi a troca.
+No app, aba **Lei seca**, filtro **Pegadinhas Vunesp (NSCGJ)**: 48 cartões "certo ou errado" feitos a partir das alternativas erradas das provas. Responda como se estivesse na prova e confira o verso: ele diz o certo e qual foi a troca.

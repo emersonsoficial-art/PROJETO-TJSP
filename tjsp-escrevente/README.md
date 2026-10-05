@@ -6,7 +6,7 @@ Um app que abre no celular e no computador, com:
 
 - **Hoje** — os blocos de estudo do dia, metas de horas líquidas e de questões, registro de acertos
 - **Timer** — foco/pausa (50/10, 25/5, 90/15); só o tempo de foco conta como hora líquida
-- **Lei seca** — flashcards com revisão espaçada (CF/88, Código Penal, CPP, CPC, Estatuto do Servidor de SP, Normas do TJSP)
+- **Lei seca** — 910 flashcards com revisão espaçada, só do que o edital 02/2025 cobra (CP, CF/88, CPP, CPC, Juizados, Estatuto do Servidor de SP, Improbidade, PcD, Normas da CGJ, LC 1.111, Res. 850 e 963, Regimento Interno), no molde das provas da Vunesp
 - **Desempenho** — horas e questões dos últimos 14 dias, % de acerto por matéria (piores no topo), dias cumpridos e sequência
 
 E a parte de texto em [`conteudo/`](conteudo/): rotina e método, caderno de erros, registro de simulados e lista de artigos prioritários.
@@ -77,4 +77,4 @@ Entram até 15 cartões novos por dia. Um cartão é considerado “dominado” 
 
 ## Aviso
 
-Os cartões resumem o texto legal para memorização. Confira sempre com a lei atualizada (planalto.gov.br e site do TJSP) e com o conteúdo programático do edital. Cartões marcados com “confira este artigo” têm a numeração a verificar no texto vigente.
+Os cartões resumem o texto legal para memorização. Confira sempre com a lei atualizada (planalto.gov.br e site do TJSP) e com o conteúdo programático do edital. Cartões marcados com “confira este artigo” (14) foram escritos sem o texto oficial à mão — confira no site oficial. “caiu 2024/2025” indica questão de prova real.

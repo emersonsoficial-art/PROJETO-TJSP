@@ -1,6 +1,6 @@
 # Análise das provas reais: Escrevente TJ/SP 2024 (reaplicada) e 2025
 
-Base: 170 questões (100 da prova reaplicada de 24/11/2024, versão 3, e 70 da prova de 07/12/2025, versão 4), com o gabarito oficial. Cada cartão do filtro **Provas Vunesp 2024-2025** vem de uma dessas questões.
+Base: 170 questões (100 da prova reaplicada de 24/11/2024, versão 3, e 70 da prova de 07/12/2025, versão 4), com o gabarito oficial. Os fatos cobrados nessas questões estão incorporados aos cartões de cada lei (referência “caiu 2024 Qn” ou “caiu 2025 Qn”).
 Limite: são só 2 provas. Use como tendência, não como garantia.
 
 ## 1. Como as provas se dividem
@@ -71,4 +71,4 @@ Art. 5º (XI, ações constitucionais, direitos do preso), art. 7º (direitos do
 Para passar nos blocos eliminatórios: **8 acertos em Português** (você fez 7) e **15 em Direito** (você fez 13). Um escrevente que acerta toda a gramática normativa (5 questões) e os pontos recorrentes de Direito acima já sai do risco de eliminação.
 
 ## 7. Como usar
-No app, aba **Lei seca**, filtro **Provas Vunesp 2024-2025** (66 cartões): leia a pergunta, tente responder a regra e confira o verso. Cada cartão traz a regra cobrada e o erro típico das alternativas erradas.
+No app, aba **Lei seca**: os fatos cobrados nas provas de 2024 e 2025 foram incorporados aos cartões de cada lei, identificados no campo de referência (ex.: “caiu 2025 Q17”). Leia a pergunta, tente responder a regra e confira o verso, que traz a regra literal e a pegadinha.
