@@ -2,7 +2,7 @@
 
 ## A semana (4h30 líquidas por dia útil, das 10h às 15h)
 
-Base: [edital 2026](edital-2026.md) — 70 questões. Último resultado: 29/70 (Português 7/16, Direito 13/32, Gerais 9/22).
+Base: [edital 02/2025](edital-2025.md) — 70 questões + redação eliminatória. Último resultado: 29/70 (Português 7/16, Direito 13/30, Gerais 9/24).
 
 | Dia | Bloco 1 | Bloco 2 | Bloco 3 | Fixos |
 |---|---|---|---|---|
@@ -10,11 +10,11 @@ Base: [edital 2026](edital-2026.md) — 70 questões. Último resultado: 29/70 (
 | Terça | Português — questões | Raciocínio Lógico | Proc. Civil | Lei seca 30 · Revisão 1h |
 | Quarta | Informática | Dir. Constitucional | Legislação Especial (NSCGJ, Res. 850 e 963) | Lei seca 30 · Revisão 1h |
 | Quinta | Português — teoria (concordância, regência, crase) | Matemática — questões | Proc. Penal | Lei seca 30 · Revisão 1h |
-| Sexta | Português — questões dos seus erros | Penal 30 · Est. Pessoa c/ Deficiência 30 · Improbidade 30 · Atualidades 30 | | Lei seca 30 · Revisão da semana 1h |
-| Sábado | **Simulado de 70 questões** no tempo da Vunesp + correção | | | |
+| Sexta | Português — questões 30 | **Redação** (1 texto manuscrito) 60 · Penal 30 · Atualidades + Est. Pessoa c/ Deficiência 30 · Improbidade 30 | | Lei seca 30 · Revisão da semana 1h |
+| Sábado | **Simulado de 70 questões + 1 redação** no tempo da prova (5 h) + correção | | | |
 | Domingo | **Descanso** (opcional: 15 min de flashcards) | | | |
 
-Meta: cerca de 40 questões por dia. Sem bloco de redação: a prova é objetiva.
+Meta: cerca de 40 questões por dia. **A redação é eliminatória** (mínimo 20 de 40): escreva 1 texto por semana na sexta e peça correção pelos critérios do edital.
 
 Para mudar a rotina, edite `data/rotina.js` — o app atualiza sozinho.
 

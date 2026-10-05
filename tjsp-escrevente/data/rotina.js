@@ -1,6 +1,6 @@
 // Rotina semanal — 4h30 líquidas por dia (seg a sex), simulado no sábado, descanso no domingo.
-// Base: edital verticalizado 2026 (70 questões: Português 16, Direito 32, Conhecimentos Gerais 22).
-// Seu último resultado: 29/70 (Port 7/16, Direito 13/32, Gerais 9/22) — por isso todo dia tem Português ou Direito forte.
+// Base: Edital 02/2025 do TJSP (70 questões: Português 16, Direito 30, Gerais 24) + redação eliminatória.
+// Seu último resultado: 29/70 (Port 7/16, Direito 13/30, Gerais 9/24) — por isso todo dia tem Português ou Direito forte.
 // Horário: 10h às 15h (inclui pausas do 50/10). Para mudar a rotina, edite os blocos abaixo (minutos = tempo líquido).
 // Dias: 0 = domingo, 1 = segunda ... 6 = sábado.
 
@@ -34,11 +34,11 @@ window.ROTINA = {
     { materia: "Revisão", tipo: "Caderno de erros", min: 60 }
   ]},
   5: { nome: "Sexta", blocos: [
-    { materia: "Língua Portuguesa", tipo: "Questões (pontos que mais errou)", min: 60 },
+    { materia: "Língua Portuguesa", tipo: "Questões (pontos que mais errou)", min: 30 },
+    { materia: "Redação", tipo: "Escrever 1 dissertação manuscrita + corrigir pelos critérios", min: 60 },
     { materia: "Direito Penal", tipo: "Arts. 293 a 359 (falsidade, funcionário público)", min: 30 },
-    { materia: "Estatuto da Pessoa com Deficiência", tipo: "Arts. 1º a 13 e 34 a 38", min: 30 },
+    { materia: "Atualidades + Estatuto da Pessoa com Deficiência", tipo: "Fatos do ano + arts. 1º a 13 e 34 a 38", min: 30 },
     { materia: "Direito Administrativo", tipo: "Improbidade (Lei 8.429/92)", min: 30 },
-    { materia: "Atualidades", tipo: "Fatos do ano (mês a mês)", min: 30 },
     { materia: "Lei seca", tipo: "Flashcards", min: 30 },
     { materia: "Revisão", tipo: "Semana inteira", min: 60 }
   ]},
