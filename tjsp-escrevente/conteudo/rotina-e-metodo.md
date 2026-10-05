@@ -1,6 +1,6 @@
 # Rotina e método
 
-## A semana (4h30 líquidas por dia útil, no turno da tarde)
+## A semana (4h30 líquidas por dia útil, das 10h às 15h)
 
 Base: [edital 2026](edital-2026.md) — 70 questões. Último resultado: 29/70 (Português 7/16, Direito 13/32, Gerais 9/22).
 

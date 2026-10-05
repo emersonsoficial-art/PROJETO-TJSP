@@ -1,7 +1,7 @@
 // Rotina semanal — 4h30 líquidas por dia (seg a sex), simulado no sábado, descanso no domingo.
 // Base: edital verticalizado 2026 (70 questões: Português 16, Direito 32, Conhecimentos Gerais 22).
 // Seu último resultado: 29/70 (Port 7/16, Direito 13/32, Gerais 9/22) — por isso todo dia tem Português ou Direito forte.
-// Estude NO TURNO DA TARDE. Para mudar a rotina, edite os blocos abaixo (minutos = tempo líquido).
+// Horário: 10h às 15h (inclui pausas do 50/10). Para mudar a rotina, edite os blocos abaixo (minutos = tempo líquido).
 // Dias: 0 = domingo, 1 = segunda ... 6 = sábado.
 
 window.ROTINA = {
