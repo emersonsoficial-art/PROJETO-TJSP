@@ -9,7 +9,7 @@
   const NOVOS_POR_DIA = 15;
 
   function estadoPadrao() {
-    return { config: { metaHoras: 5, metaQ: 50 }, dias: {}, cards: {} };
+    return { config: { metaHoras: 4.5, metaQ: 40 }, dias: {}, cards: {} };
   }
   let estado = carregar();
 
@@ -397,7 +397,7 @@
   }
   $("#form-ajustes").addEventListener("submit", e => {
     e.preventDefault();
-    estado.config.metaHoras = Number($("#aj-horas").value) || 5;
+    estado.config.metaHoras = Number($("#aj-horas").value) || 4.5;
     estado.config.metaQ = Number($("#aj-q").value) || 50;
     salvar(); renderDesempenho(); renderHoje();
   });

@@ -1,18 +1,22 @@
 # Rotina e método
 
-## A semana
+## A semana (4h30 líquidas por dia útil)
 
-| Dia | Matéria fraca (teoria + questões) | Matéria forte (manutenção) | Fixos |
-|---|---|---|---|
-| Segunda | Direito Processual Penal | Língua Portuguesa | Lei seca 30 min · Revisão 1h |
-| Terça | Direito Processual Civil | Direito Constitucional | Lei seca 30 min · Revisão 1h |
-| Quarta | Normas internas TJSP | Direito Penal | Lei seca 30 min · Revisão 1h |
-| Quinta | Matemática + Atualidades | Raciocínio Lógico | Lei seca 30 min · Revisão 1h |
-| Sexta | Redação + Processos (mistas) | Informática | Lei seca 30 min · Revisão da semana |
-| Sábado | **Simulado completo** no tempo da Vunesp + correção | | |
-| Domingo | **Descanso** (opcional: 15 min de flashcards) | | |
+Ponto de partida: maior nota nas provas anteriores = 60%. Fracos: **Português, Matemática e Direito**.
 
-Total: 5 horas líquidas por dia útil, cerca de 50 questões por dia.
+| Dia | Bloco 1 (mais fresco) | Bloco 2 | Bloco 3 | Fixos |
+|---|---|---|---|---|
+| Segunda | Português — teoria | Matemática — teoria + exercícios | Proc. Penal | Lei seca 30 · Revisão 1h |
+| Terça | Português — questões | Matemática — questões | Proc. Civil | Lei seca 30 · Revisão 1h |
+| Quarta | Português — teoria | Normas TJSP | Dir. Constitucional | Lei seca 30 · Revisão 1h |
+| Quinta | Matemática — teoria + exercícios | Português — questões | Direito Penal | Lei seca 30 · Revisão 1h |
+| Sexta | Português — questões dos seus erros | Raciocínio/Mat. 30 · Informática 30 · Atualidades 30 | Direito misto — questões 1h | Lei seca 30 · Revisão da semana 30 |
+| Sábado | **Simulado completo** no tempo da Vunesp + correção | | | |
+| Domingo | **Descanso** (opcional: 15 min de flashcards) | | | |
+
+Português 5x por semana e Matemática 3x: são as matérias em que mais pontos podem ser ganhos por esforço. Meta: cerca de 40 questões por dia.
+
+**Antes de tudo:** confirme no edital 2025 (PDF) quantas questões vale cada matéria e se há redação. Se não houver, a rotina já está sem bloco de redação. Ajuste os pesos em `data/rotina.js`.
 
 Para mudar a rotina, edite `data/rotina.js` — o app atualiza sozinho.
 
