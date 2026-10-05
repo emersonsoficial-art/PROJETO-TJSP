@@ -1,18 +1,20 @@
 # Rotina e método
 
-## A semana
+## A semana (4h30 líquidas por dia útil, das 10h às 15h)
 
-| Dia | Matéria fraca (teoria + questões) | Matéria forte (manutenção) | Fixos |
-|---|---|---|---|
-| Segunda | Direito Processual Penal | Língua Portuguesa | Lei seca 30 min · Revisão 1h |
-| Terça | Direito Processual Civil | Direito Constitucional | Lei seca 30 min · Revisão 1h |
-| Quarta | Normas internas TJSP | Direito Penal | Lei seca 30 min · Revisão 1h |
-| Quinta | Matemática + Atualidades | Raciocínio Lógico | Lei seca 30 min · Revisão 1h |
-| Sexta | Redação + Processos (mistas) | Informática | Lei seca 30 min · Revisão da semana |
-| Sábado | **Simulado completo** no tempo da Vunesp + correção | | |
-| Domingo | **Descanso** (opcional: 15 min de flashcards) | | |
+Base: [edital 02/2025](edital-2025.md) — 70 questões + redação eliminatória. Último resultado: 29/70 (Português 7/16, Direito 13/30, Gerais 9/24).
 
-Total: 5 horas líquidas por dia útil, cerca de 50 questões por dia.
+| Dia | Bloco 1 | Bloco 2 | Bloco 3 | Fixos |
+|---|---|---|---|---|
+| Segunda | Português — teoria | Matemática — teoria + exercícios | Dir. Administrativo (Estatuto Lei 10.261) | Lei seca 30 · Revisão 1h |
+| Terça | Português — questões | Raciocínio Lógico | Proc. Civil | Lei seca 30 · Revisão 1h |
+| Quarta | Informática | Dir. Constitucional | Legislação Especial (NSCGJ, Res. 850 e 963) | Lei seca 30 · Revisão 1h |
+| Quinta | Português — teoria (concordância, regência, crase) | Matemática — questões | Proc. Penal | Lei seca 30 · Revisão 1h |
+| Sexta | Português — questões 30 | **Redação** (1 texto manuscrito) 60 · Penal 30 · Atualidades + Est. Pessoa c/ Deficiência 30 · Improbidade 30 | | Lei seca 30 · Revisão da semana 1h |
+| Sábado | **Simulado de 70 questões + 1 redação** no tempo da prova (5 h) + correção | | | |
+| Domingo | **Descanso** (opcional: 15 min de flashcards) | | | |
+
+Meta: cerca de 40 questões por dia. **A redação é eliminatória** (mínimo 20 de 40): **1 redação nova a cada 2 semanas** (sexta da semana A), enviada para correção; na sexta da semana B, reescreva o texto com os pontos corrigidos e monte repertório. Guia em [redacao.md](redacao.md).
 
 Para mudar a rotina, edite `data/rotina.js` — o app atualiza sozinho.
 
