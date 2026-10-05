@@ -145,11 +145,5 @@ window.CARDS = (window.CARDS || []).concat([
     verso: "ERRADO. Sempre que possível, com base no sistema, cabendo ao ESCRIVÃO dar fé pública do que nele constar ou não (art. 104, §1º)." },
   { id: "peg-48", lei: "Pegadinhas Vunesp (NSCGJ)", ref: "Prova 2023 · Infojud",
     frente: "CERTO ou ERRADO? «As informações da Receita Federal sobre endereço ou situação econômico-financeira da parte são obtidas pelo BacenJud (ou e-SAJ, ou PJe).»",
-    verso: "ERRADO. Pelo sistema INFOJUD, com Certificado Digital ICP-Brasil Padrão A-3 (art. 121-A)." },
-  { id: "peg-49", lei: "Pegadinhas Vunesp (NSCGJ)", ref: "Estilo Vunesp",
-    frente: "CERTO ou ERRADO? «As correições ordinárias, extraordinárias e visitas: qual prazo de envio de ata decorar?»",
-    verso: "Ordinária: 60 dias. Extraordinária: 15 dias. Visita correcional: 15 dias. (Mnemônico: só a ordinária é 'longa'.)" },
-  { id: "peg-50", lei: "Pegadinhas Vunesp (NSCGJ)", ref: "Estilo Vunesp",
-    frente: "CERTO ou ERRADO? «Qual lista de números das NSCGJ mais cai (decorar!)?»",
-    verso: "24 horas (autuação) · 200 folhas (volume) · 1 dia (conclusão) · 5 dias (atos e certidões) · 30 dias (diligência parada) · 5 dias úteis (certidão entre ofícios por e-mail) · 15 dias (edital da ordinária) · 60/15 dias (atas) · 1 ano (ofícios) · 2 anos (livros de carga, GRD) · semanal (auditoria) · mensal (visita ao presídio)." }
+    verso: "ERRADO. Pelo sistema INFOJUD, com Certificado Digital ICP-Brasil Padrão A-3 (art. 121-A)." }
 ]);
