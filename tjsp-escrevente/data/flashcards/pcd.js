@@ -33,7 +33,7 @@ window.CARDS = (window.CARDS || []).concat([
   { id: "pcd-11", lei: "Estatuto PcD", ref: "Art. 35", conferir: true,
     frente: "Art. 35: finalidade das políticas de trabalho e emprego.",
     verso: "Art. 35: as políticas públicas de trabalho e emprego têm a finalidade de promover e garantir condições de acesso e de permanência da pessoa com deficiência no campo de trabalho." },
-  { id: "pcd-12", lei: "Estatuto PcD", ref: "Art. 36",
+  { id: "pcd-12", lei: "Estatuto PcD", ref: "Art. 36", conferir: true,
     frente: "Habilitação e reabilitação profissional (art. 36).",
     verso: "O poder público deve implementar serviços e programas completos de habilitação profissional e de reabilitação profissional para que a pessoa com deficiência possa ingressar, continuar ou retornar ao campo do trabalho, respeitados sua livre escolha, sua vocação e seu interesse. Os programas devem ser oferecidos em parceria com empresas e entidades, e devem considerar a avaliação biopsicossocial." },
   { id: "pcd-13", lei: "Estatuto PcD", ref: "Art. 37", conferir: true,
