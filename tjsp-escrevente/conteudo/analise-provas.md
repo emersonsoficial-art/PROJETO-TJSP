@@ -23,7 +23,7 @@ Limite: são só 2 provas. Use como tendência, não como garantia.
 Leitura rápida:
 - **Direito pesa 40% da prova** e é eliminatório (mín. 50%). Português também é eliminatório.
 - **Legislação interna**: em 2025, cada uma das 5 questões veio de uma fonte diferente do edital. Não vale decorar só as Normas da Corregedoria: aprenda o básico de cada fonte (Res. 963 do eproc, Res. 850 do teletrabalho, LC 1.111, Regimento Interno).
-- **Informática + Raciocínio Lógico + Matemática** somam 33 a 30 questões de 100/70 e não eliminam, mas dão muitos pontos por hora.
+- **Informática + Raciocínio Lógico + Matemática** somam 30 questões de 100 (2024) e 20 de 70 (2025). Não eliminam, mas dão muitos pontos por hora.
 
 ## 2. O que mais cai por tema (nas 2 provas)
 
