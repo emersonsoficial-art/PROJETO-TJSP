@@ -35,7 +35,7 @@ window.ROTINA = {
   ]},
   5: { nome: "Sexta", blocos: [
     { materia: "Língua Portuguesa", tipo: "Questões (pontos que mais errou)", min: 30 },
-    { materia: "Redação", tipo: "Escrever 1 dissertação manuscrita + corrigir pelos critérios", min: 60 },
+    { materia: "Redação", tipo: "Semana A: escrever 1 texto manuscrito · Semana B: refazer o texto com a correção + repertório", min: 60 },
     { materia: "Direito Penal", tipo: "Arts. 293 a 359 (falsidade, funcionário público)", min: 30 },
     { materia: "Atualidades + Estatuto da Pessoa com Deficiência", tipo: "Fatos do ano + arts. 1º a 13 e 34 a 38", min: 30 },
     { materia: "Direito Administrativo", tipo: "Improbidade (Lei 8.429/92)", min: 30 },

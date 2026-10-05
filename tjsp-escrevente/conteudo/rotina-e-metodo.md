@@ -14,7 +14,7 @@ Base: [edital 02/2025](edital-2025.md) — 70 questões + redação eliminatóri
 | Sábado | **Simulado de 70 questões + 1 redação** no tempo da prova (5 h) + correção | | | |
 | Domingo | **Descanso** (opcional: 15 min de flashcards) | | | |
 
-Meta: cerca de 40 questões por dia. **A redação é eliminatória** (mínimo 20 de 40): escreva 1 texto por semana na sexta e peça correção pelos critérios do edital.
+Meta: cerca de 40 questões por dia. **A redação é eliminatória** (mínimo 20 de 40): **1 redação nova a cada 2 semanas** (sexta da semana A), enviada para correção; na sexta da semana B, reescreva o texto com os pontos corrigidos e monte repertório. Guia em [redacao.md](redacao.md).
 
 Para mudar a rotina, edite `data/rotina.js` — o app atualiza sozinho.
 
