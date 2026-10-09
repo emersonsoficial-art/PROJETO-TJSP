@@ -92,6 +92,16 @@
           <select id="lei-filtro" aria-label="Filtrar por lei"></select>
           <span class="pilula" id="lei-pendentes"></span>
         </div>
+        <details class="artigos" id="lei-artigos">
+          <summary id="lei-artigos-resumo">Escolher artigos para estudar</summary>
+          <div class="artigos-barra">
+            <input type="search" id="lei-busca" placeholder="Buscar artigo (ex.: 312, inassiduidade)" aria-label="Buscar artigo">
+            <button type="button" class="chip" id="lei-todos">Marcar todos</button>
+            <button type="button" class="chip" id="lei-limpar">Limpar</button>
+          </div>
+          <p class="aviso">Marque só os artigos que quer estudar agora. Sem nada marcado, vale a lei inteira.</p>
+          <div id="lei-lista" class="artigos-lista"></div>
+        </details>
         <div id="flash" class="flash">
           <p class="flash-ref" id="flash-ref"></p>
           <p class="flash-frente" id="flash-frente"></p>
