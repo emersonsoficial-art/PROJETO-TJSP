@@ -181,3 +181,5 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px s
 .artigos-lista label { display: flex; gap: 8px; align-items: flex-start; font-size: 14px; padding: 4px 2px; cursor: pointer; }
 .artigos-lista input { margin-top: 3px; }
 .artigos-lista small { color: var(--tinta-2); }
+.artigos-sub { margin: 12px 0 2px; font-size: 13px; color: var(--tinta-2); text-transform: uppercase; letter-spacing: .04em; }
+.artigos-lista .grupo { font-weight: 700; font-size: 13px; color: var(--marca); margin-top: 8px; }

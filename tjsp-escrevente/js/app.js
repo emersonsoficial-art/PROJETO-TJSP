@@ -278,6 +278,42 @@
     return !filtro.value || c.lei === filtro.value;
   }
   function normaliza(t) { return (t || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""); }
+  function numArt(c) {
+    const m = c.ref.match(/\barts?\.\s*(\d+(?:\.\d{3})*)(?:-([A-Z]))?/);
+    if (!m) return null;
+    return Number(m[1].replace(/\./g, "")) + (m[2] ? (m[2].charCodeAt(0) - 64) / 100 : 0);
+  }
+  function cartoesDoTema(t) {
+    return CARDS.filter(c => {
+      if (filtro.value && c.lei !== filtro.value) return false;
+      const n = numArt(c);
+      return t.regras.some(r => r.lei === c.lei && (r.sem ? n === null : (r.de === undefined || (n !== null && n >= r.de && n <= r.ate))));
+    });
+  }
+  function renderTemas() {
+    const box = $("#lei-temas");
+    box.replaceChildren();
+    const q = normaliza($("#lei-busca").value), sel = selecao();
+    let grupoAtual = null;
+    (window.TEMAS || []).forEach(t => {
+      if (q && !normaliza(t.nome).includes(q)) return;
+      const cs = cartoesDoTema(t);
+      if (!cs.length) return;
+      if (t.grupo !== grupoAtual) { grupoAtual = t.grupo; const g = document.createElement("div"); g.className = "grupo"; g.textContent = t.grupo; box.append(g); }
+      const ks = [...new Set(cs.map(chaveDe))];
+      const cb = document.createElement("input");
+      cb.type = "checkbox"; cb.checked = ks.every(k => sel.includes(k));
+      cb.addEventListener("change", () => {
+        const resto = selecao().filter(x => !ks.includes(x));
+        estado.selecaoLista = cb.checked ? resto.concat(ks) : resto;
+        salvar(); renderLei(false);
+      });
+      const lab = document.createElement("label");
+      const span = document.createElement("span"); span.textContent = t.nome + " ";
+      const sm = document.createElement("small"); sm.textContent = "(" + cs.length + (cs.length === 1 ? " cartão)" : " cartões)");
+      span.append(sm); lab.append(cb, span); box.append(lab);
+    });
+  }
   function gruposVisiveis() {
     const q = normaliza($("#lei-busca").value);
     const grupos = new Map();
@@ -290,6 +326,7 @@
     return [...grupos].filter(([k, g]) => !q || normaliza(k + g.texto).includes(q));
   }
   function renderArtigos() {
+    renderTemas();
     const lista = $("#lei-lista");
     lista.replaceChildren();
     const sel = selecao();
