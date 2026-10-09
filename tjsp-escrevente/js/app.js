@@ -9,7 +9,7 @@
   const NOVOS_POR_DIA = 15;
 
   function estadoPadrao() {
-    return { config: { metaHoras: 4.5, metaQ: 40 }, dias: {}, cards: {} };
+    return { config: { metaHoras: 4.5, metaQ: 40 }, dias: {}, cards: {}, selecao: {} };
   }
   let estado = carregar();
 
@@ -268,16 +268,63 @@
   let fila = [], atual = null;
 
   function progresso(id) { return estado.cards[id] || null; }
+  // Artigos escolhidos: estado.selecao[lei] = lista de chaves (ref sem os "caiu/já caiu"). Vazio = lei inteira.
+  const chaveDe = c => c.ref.split(" · ")[0];
+  function selecaoAtual() { return (estado.selecao && estado.selecao[filtro.value]) || []; }
+  function noEscopo(c) {
+    if (filtro.value && c.lei !== filtro.value) return false;
+    const sel = selecaoAtual();
+    return !filtro.value || !sel.length || sel.includes(chaveDe(c));
+  }
+  function renderArtigos() {
+    const lista = $("#lei-lista"), det = $("#lei-artigos");
+    lista.replaceChildren();
+    det.hidden = !filtro.value;
+    if (!filtro.value) return;
+    const q = ($("#lei-busca").value || "").toLowerCase();
+    const sel = selecaoAtual();
+    const grupos = new Map();
+    CARDS.filter(c => c.lei === filtro.value).forEach(c => grupos.set(chaveDe(c), (grupos.get(chaveDe(c)) || 0) + 1));
+    grupos.forEach((n, k) => {
+      if (q && !k.toLowerCase().includes(q)) return;
+      const cb = document.createElement("input");
+      cb.type = "checkbox"; cb.checked = sel.includes(k);
+      cb.addEventListener("change", () => {
+        const atual = selecaoAtual().filter(x => x !== k);
+        if (cb.checked) atual.push(k);
+        estado.selecao = estado.selecao || {}; estado.selecao[filtro.value] = atual;
+        salvar(); renderLei(false);
+      });
+      const lab = document.createElement("label");
+      const t = document.createElement("span"); t.textContent = k + " ";
+      const sm = document.createElement("small"); sm.textContent = "(" + n + (n === 1 ? " cartão)" : " cartões)");
+      t.append(sm); lab.append(cb, t); lista.append(lab);
+    });
+    $("#lei-artigos-resumo").textContent = sel.length ? "Artigos escolhidos: " + sel.length + " (toque para mudar)" : "Escolher artigos para estudar";
+  }
+  $("#lei-busca").addEventListener("input", renderArtigos);
+  $("#lei-todos").addEventListener("click", () => {
+    const q = ($("#lei-busca").value || "").toLowerCase();
+    const ks = [...new Set(CARDS.filter(c => c.lei === filtro.value).map(chaveDe))].filter(k => !q || k.toLowerCase().includes(q));
+    estado.selecao = estado.selecao || {}; estado.selecao[filtro.value] = [...new Set(selecaoAtual().concat(ks))];
+    salvar(); renderLei(false);
+  });
+  $("#lei-limpar").addEventListener("click", () => {
+    estado.selecao = estado.selecao || {}; estado.selecao[filtro.value] = [];
+    salvar(); renderLei(false);
+  });
   function montarFila() {
     const h = hoje();
-    const base = CARDS.filter(c => !filtro.value || c.lei === filtro.value);
+    const base = CARDS.filter(noEscopo);
     const revisoes = base.filter(c => { const p = progresso(c.id); return p && p.due <= h; })
       .sort((a, b) => progresso(a.id).due.localeCompare(progresso(b.id).due));
     const vagas = Math.max(0, NOVOS_POR_DIA - (dia().novos || 0));
     const novos = base.filter(c => !progresso(c.id)).slice(0, vagas);
     fila = revisoes.concat(novos);
   }
-  function renderLei() {
+  function renderLei(refazerLista = true) {
+    if (refazerLista !== false) $("#lei-busca").value = "";
+    renderArtigos();
     montarFila();
     proximo();
     renderResumoLei();
