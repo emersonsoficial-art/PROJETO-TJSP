@@ -100,6 +100,7 @@
     document.querySelectorAll(".aba").forEach(a => a.classList.toggle("ativa", a.id === "aba-" + nome));
     if (nome === "desempenho") renderDesempenho();
     if (nome === "lei") renderLei();
+    if (nome === "jogo" && window.Jogo) window.Jogo.abrir();
     window.scrollTo(0, 0);
   }
 
@@ -427,6 +428,13 @@
       box.append(el("p", { class: "aviso", text: "Normas internas TJSP: adicione cartões em data/flashcards/normas-tjsp.js." }));
     }
   }
+
+  // Ponte para o jogo (js/jogo.js)
+  window.TJSPApp = {
+    estado: () => estado, salvar, hoje, chaveDe, numArt,
+    selecaoAtiva: () => selecao(),
+    noEscopo: c => !selecao().length || selecao().includes(chaveDe(c))
+  };
 
   // ---------- DESEMPENHO ----------
   function renderDesempenho() {
