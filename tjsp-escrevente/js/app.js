@@ -9,7 +9,7 @@
   const NOVOS_POR_DIA = 15;
 
   function estadoPadrao() {
-    return { config: { metaHoras: 4.5, metaQ: 40 }, dias: {}, cards: {}, selecao: {} };
+    return { config: { metaHoras: 4.5, metaQ: 40 }, dias: {}, cards: {}, selecaoLista: [] };
   }
   let estado = carregar();
 
@@ -268,50 +268,55 @@
   let fila = [], atual = null;
 
   function progresso(id) { return estado.cards[id] || null; }
-  // Artigos escolhidos: estado.selecao[lei] = lista de chaves (ref sem os "caiu/já caiu"). Vazio = lei inteira.
-  const chaveDe = c => c.ref.split(" · ")[0];
-  function selecaoAtual() { return (estado.selecao && estado.selecao[filtro.value]) || []; }
+  // Artigos escolhidos: estado.selecaoLista = chaves "lei|ref" (ref sem os "caiu/já caiu"). Vazio = vale o filtro de lei.
+  const chaveDe = c => c.lei + "|" + c.ref.split(" · ")[0];
+  const nomeDe = k => k.split("|")[1];
+  function selecao() { return Array.isArray(estado.selecaoLista) ? estado.selecaoLista : []; }
   function noEscopo(c) {
-    if (filtro.value && c.lei !== filtro.value) return false;
-    const sel = selecaoAtual();
-    return !filtro.value || !sel.length || sel.includes(chaveDe(c));
+    const sel = selecao();
+    if (sel.length) return sel.includes(chaveDe(c));
+    return !filtro.value || c.lei === filtro.value;
+  }
+  function normaliza(t) { return (t || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""); }
+  function gruposVisiveis() {
+    const q = normaliza($("#lei-busca").value);
+    const grupos = new Map();
+    CARDS.forEach(c => {
+      if (filtro.value && c.lei !== filtro.value) return;
+      const k = chaveDe(c);
+      if (!grupos.has(k)) grupos.set(k, { n: 0, texto: "", lei: c.lei });
+      const g = grupos.get(k); g.n++; g.texto += " " + c.ref + " " + c.frente;
+    });
+    return [...grupos].filter(([k, g]) => !q || normaliza(k + g.texto).includes(q));
   }
   function renderArtigos() {
-    const lista = $("#lei-lista"), det = $("#lei-artigos");
+    const lista = $("#lei-lista");
     lista.replaceChildren();
-    det.hidden = !filtro.value;
-    if (!filtro.value) return;
-    const q = ($("#lei-busca").value || "").toLowerCase();
-    const sel = selecaoAtual();
-    const grupos = new Map();
-    CARDS.filter(c => c.lei === filtro.value).forEach(c => grupos.set(chaveDe(c), (grupos.get(chaveDe(c)) || 0) + 1));
-    grupos.forEach((n, k) => {
-      if (q && !k.toLowerCase().includes(q)) return;
+    const sel = selecao();
+    gruposVisiveis().forEach(([k, g]) => {
       const cb = document.createElement("input");
       cb.type = "checkbox"; cb.checked = sel.includes(k);
       cb.addEventListener("change", () => {
-        const atual = selecaoAtual().filter(x => x !== k);
+        const atual = selecao().filter(x => x !== k);
         if (cb.checked) atual.push(k);
-        estado.selecao = estado.selecao || {}; estado.selecao[filtro.value] = atual;
-        salvar(); renderLei(false);
+        estado.selecaoLista = atual; salvar(); renderLei(false);
       });
       const lab = document.createElement("label");
-      const t = document.createElement("span"); t.textContent = k + " ";
-      const sm = document.createElement("small"); sm.textContent = "(" + n + (n === 1 ? " cartão)" : " cartões)");
+      const t = document.createElement("span"); t.textContent = nomeDe(k) + " ";
+      const sm = document.createElement("small");
+      sm.textContent = "(" + (filtro.value ? "" : g.lei + " · ") + g.n + (g.n === 1 ? " cartão)" : " cartões)");
       t.append(sm); lab.append(cb, t); lista.append(lab);
     });
     $("#lei-artigos-resumo").textContent = sel.length ? "Artigos escolhidos: " + sel.length + " (toque para mudar)" : "Escolher artigos para estudar";
   }
   $("#lei-busca").addEventListener("input", renderArtigos);
   $("#lei-todos").addEventListener("click", () => {
-    const q = ($("#lei-busca").value || "").toLowerCase();
-    const ks = [...new Set(CARDS.filter(c => c.lei === filtro.value).map(chaveDe))].filter(k => !q || k.toLowerCase().includes(q));
-    estado.selecao = estado.selecao || {}; estado.selecao[filtro.value] = [...new Set(selecaoAtual().concat(ks))];
+    const ks = gruposVisiveis().map(([k]) => k);
+    estado.selecaoLista = [...new Set(selecao().concat(ks))];
     salvar(); renderLei(false);
   });
   $("#lei-limpar").addEventListener("click", () => {
-    estado.selecao = estado.selecao || {}; estado.selecao[filtro.value] = [];
-    salvar(); renderLei(false);
+    estado.selecaoLista = []; salvar(); renderLei(false);
   });
   function montarFila() {
     const h = hoje();
